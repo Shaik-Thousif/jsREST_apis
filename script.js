@@ -51,7 +51,7 @@ const url="https://jsonplaceholder.typicode.com/posts";
    
  }
 
-//post method
+//post method listner
  postMethod.addEventListener("click",async ()=>{
     alert("post method")
 
@@ -109,7 +109,7 @@ const updateData=async(update,id)=>{
  //delete method
 
 const deleteData=async(id)=>{
-    const resBody=await fetch(`${url}${id}`,{
+    const resBody=await fetch(`${url}/${id}`,{
         method:"DELETE",
         
     });
